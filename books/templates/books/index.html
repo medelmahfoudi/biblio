@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="books">
+    {% for x in books %}
+    <div class="card">
+        <img src="{{ media_url }}{{ x.image }}" alt="">
+        <a class="title" href="{{ media_url }}{{ x.pdf }}">{{ x.title }}</a>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

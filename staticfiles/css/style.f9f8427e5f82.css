@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+:root {
+    --blue-10: #D5E5F2;
+    --blue-20: #8DB9F2;
+    --blue-30: #1D8FF2;
+    --green: #04BF68;
+    --orange: #F2C36B;
+
+    --aref-ruqaa: 'Aref Ruqaa', serif;
+}
+
+body {
+    background-color: var(--blue-10);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.books {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12.5rem);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+
+.title {
+    padding: .5rem 0;
+    font-family: var(--aref-ruqaa);
+    font-size: 1.2rem;
+    color: var(--blue-20);
+}
+
+.title:hover {
+    color: var(--orange);
+}
